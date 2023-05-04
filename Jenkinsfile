@@ -19,6 +19,7 @@ pipeline {
                 }
             }
             steps {
+                echo 'Test steps process'
                 sh 'pytest -v --junit-xml test-reports/results.xml sources/test_calc.py'
             }
             post {
